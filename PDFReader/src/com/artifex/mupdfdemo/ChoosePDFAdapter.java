@@ -10,6 +10,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.lm.application.awesomereader.R;
+
 public class ChoosePDFAdapter extends BaseAdapter {
 	private final LinkedList<ChoosePDFItem> mItems;
 	private final LayoutInflater mInflater;

@@ -21,6 +21,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+import com.lm.application.awesomereader.R;
+
 // Make our ImageViews opaque to optimize redraw
 class OpaqueImageView extends ImageView {
 

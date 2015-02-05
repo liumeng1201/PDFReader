@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.artifex.mupdfdemo"
-    android:installLocation="auto"
+    package="com.lm.application.awesomereader"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -22,18 +21,22 @@
         android:hardwareAccelerated="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name" >
+        
         <activity
-            android:name="ChoosePDFActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Light" >
+            android:name="com.lm.application.awesomereader.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
         <activity
-            android:name="MuPDFActivity"
+            android:name="com.artifex.mupdfdemo.ChoosePDFActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light" >
+        </activity>
+        <activity
+            android:name="com.artifex.mupdfdemo.MuPDFActivity"
             android:label="@string/app_name"
             android:theme="@style/AppBaseTheme" >
             <intent-filter>
@@ -93,12 +96,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="OutlineActivity"
+            android:name="com.artifex.mupdfdemo.OutlineActivity"
             android:label="@string/outline_title"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
         </activity>
         <activity
-            android:name="PrintDialogActivity"
+            android:name="com.artifex.mupdfdemo.PrintDialogActivity"
             android:label="@string/print"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
         </activity>

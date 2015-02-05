@@ -3,10 +3,14 @@ package com.artifex.mupdfdemo;
 import android.animation.Animator;
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
+import android.annotation.TargetApi;
 import android.app.Activity;
+import android.os.Build;
 import android.view.View;
 
-public class SafeAnimatorInflater
+import com.lm.application.awesomereader.R;
+
+@TargetApi(Build.VERSION_CODES.HONEYCOMB) public class SafeAnimatorInflater
 {
 	private View mView;
 

@@ -7,6 +7,8 @@ import android.content.DialogInterface;
 import android.graphics.RectF;
 import android.os.Handler;
 
+import com.lm.application.awesomereader.R;
+
 class ProgressDialogX extends ProgressDialog {
 	public ProgressDialogX(Context context) {
 		super(context);

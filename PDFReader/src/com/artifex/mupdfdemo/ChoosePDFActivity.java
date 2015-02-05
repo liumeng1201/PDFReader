@@ -21,6 +21,8 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ListView;
 
+import com.lm.application.awesomereader.R;
+
 enum Purpose {
 	PickPDF,
 	PickKeyFile
