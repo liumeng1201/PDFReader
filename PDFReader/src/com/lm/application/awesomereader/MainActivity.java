@@ -13,6 +13,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		Intent intent = new Intent(this, ChoosePDFActivity.class);
 		startActivity(intent);
+		finish();
 	}
 
 }
