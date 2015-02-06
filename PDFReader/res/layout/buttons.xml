@@ -46,7 +46,6 @@
 				android:layout_height="wrap_content"
 				android:layout_centerVertical="true"
 				android:layout_toLeftOf="@+id/outlineButton"
-				android:contentDescription="@string/toggle_reflow_mode"
 				android:background="@drawable/button"
 				android:src="@drawable/ic_reflow" />
 
@@ -376,7 +375,7 @@
 		android:id="@+id/info"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_above="@+id/pageSlider"
+		android:layout_above="@+id/lowerButtons"
 		android:layout_centerHorizontal="true"
 		android:layout_centerVertical="true"
 		android:background="@drawable/page_num"
