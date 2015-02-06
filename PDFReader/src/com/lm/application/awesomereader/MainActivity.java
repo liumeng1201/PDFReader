@@ -1,6 +1,7 @@
 package com.lm.application.awesomereader;
 
 import com.artifex.mupdfdemo.ChoosePDFActivity;
+import com.umeng.analytics.MobclickAgent;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,6 +15,18 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, ChoosePDFActivity.class);
 		startActivity(intent);
 		finish();
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		MobclickAgent.onResume(this);
+	}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+		MobclickAgent.onPause(this);
 	}
 
 }

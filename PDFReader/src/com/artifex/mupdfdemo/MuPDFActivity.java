@@ -34,6 +34,7 @@ import android.widget.TextView;
 import android.widget.ViewAnimator;
 
 import com.lm.application.awesomereader.R;
+import com.umeng.analytics.MobclickAgent;
 
 class ThreadPerTaskExecutor implements Executor {
 	public void execute(Runnable r) {
@@ -674,8 +675,15 @@ public class MuPDFActivity extends Activity implements FilePicker.FilePickerSupp
 	}
 
 	@Override
+	protected void onResume() {
+		super.onResume();
+		MobclickAgent.onResume(this);
+	}
+
+	@Override
 	protected void onPause() {
 		super.onPause();
+		MobclickAgent.onPause(this);
 
 		if (mSearchTask != null)
 			mSearchTask.stop();

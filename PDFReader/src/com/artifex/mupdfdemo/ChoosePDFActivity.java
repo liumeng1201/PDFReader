@@ -22,6 +22,7 @@ import android.view.View;
 import android.widget.ListView;
 
 import com.lm.application.awesomereader.R;
+import com.umeng.analytics.MobclickAgent;
 
 enum Purpose {
 	PickPDF,
@@ -218,8 +219,15 @@ public class ChoosePDFActivity extends ListActivity {
 	}
 
 	@Override
+	protected void onResume() {
+		super.onResume();
+		MobclickAgent.onResume(this);
+	}
+
+	@Override
 	protected void onPause() {
 		super.onPause();
+		MobclickAgent.onPause(this);
 		if (mDirectory != null)
 			mPositions.put(mDirectory.getAbsolutePath(), getListView().getFirstVisiblePosition());
 	}
